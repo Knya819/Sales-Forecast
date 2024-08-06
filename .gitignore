@@ -1,1 +1,9 @@
+# Ignore Python bytecode
+*.pyc
+__pycache__/
+
+# Ignore virtual environment
+venv/
+
+# Ignore requirements.txt
 requirements.txt
