@@ -30,8 +30,7 @@ def aggregate_data(data):
     Aggregate sales data by transaction date and product ID.
     """
     return data.groupby(['transaction_date', 'Product_id']).agg({
-        'item_quantity': 'sum',
-        'return_quantity': 'sum'
+        'item_quantity': 'sum'
     }).reset_index()
 
 # Plot data
@@ -159,7 +158,7 @@ def main():
     plot_data(df, 'Transaction Date vs Item Quantity', 'Transaction Date', 'Item Quantity')
     
     # Normalize and prepare data for LSTM
-    df_for_training = df[['item_quantity', 'return_quantity']]
+    df_for_training = df[['item_quantity']]
     df_for_training_scaled, scaler = normalize_data(df_for_training)
     trainX, trainY = prepare_lstm_data(df_for_training_scaled, n_past=14, n_future=1)
     
