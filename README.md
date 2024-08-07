@@ -15,10 +15,10 @@ The Sales Forecasting Project is designed to predict the future sales quantities
 
 ## Project Structure
 - `Dataset.csv`: The dataset containing historical sales data.
-- `sales_forecasting_no_parameters.py`: Script for sales forecasting without additional parameters.
-- `sales_forecasting_with_coupon.py`: Script for sales forecasting considering coupons.
-- `sales_forecasting_with_return.py`: Script for sales forecasting considering returns.
-- `sales_forecasting_with_coupon_and_return.py`: Script for sales forecasting considering both coupons and returns.
+- `Sales.py`: Script for sales forecasting without additional parameters.
+- `Sales_Coupon.py`: Script for sales forecasting considering coupons.
+- `Sales_Return.py`: Script for sales forecasting considering returns.
+- `model.py`: Script for sales forecasting considering both coupons and returns.
 - `README.md`: This file.
 - `requirements.txt`: List of Python packages required for the project.
 
@@ -62,8 +62,8 @@ The dataset (`Dataset.csv`) contains the following columns:
 - **item_sub_category**: Sub-category of the item.
 - **transaction_date**: Date of the transaction.
 - **item_quantity**: Quantity of items sold.
-- **return_quantity**: Quantity of items returned (used in `Sales_Return.py` and `Sales.py`).
-- **item_coupon**: Coupon applied on the item (used in `Sales_Coupon.py` and `Sales.py`).
+- **return_quantity**: Quantity of items returned (used in `Sales_Return.py` and `model.py`).
+- **item_coupon**: Coupon applied on the item (used in `Sales_Coupon.py` and `model.py`).
 
 ## Model Description
 
