@@ -62,8 +62,8 @@ The dataset (`Dataset.csv`) contains the following columns:
 - **item_sub_category**: Sub-category of the item.
 - **transaction_date**: Date of the transaction.
 - **item_quantity**: Quantity of items sold.
-- **return_quantity**: Quantity of items returned (used in `sales_forecasting_with_return.py` and `sales_forecasting_with_coupon_and_return.py`).
-- **item_coupon**: Coupon applied on the item (used in `sales_forecasting_with_coupon.py` and `sales_forecasting_with_coupon_and_return.py`).
+- **return_quantity**: Quantity of items returned (used in `Sales_Return.py` and `Sales.py`).
+- **item_coupon**: Coupon applied on the item (used in `Sales_Coupon.py` and `Sales.py`).
 
 ## Model Description
 
