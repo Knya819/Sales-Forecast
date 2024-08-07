@@ -15,7 +15,10 @@ The Sales Forecasting Project is designed to predict the future sales quantities
 
 ## Project Structure
 - `Dataset.csv`: The dataset containing historical sales data.
-- `main.py`: The main script for loading data, training the model, and making predictions.
+- `sales_forecasting_no_parameters.py`: Script for sales forecasting without additional parameters.
+- `sales_forecasting_with_coupon.py`: Script for sales forecasting considering coupons.
+- `sales_forecasting_with_return.py`: Script for sales forecasting considering returns.
+- `sales_forecasting_with_coupon_and_return.py`: Script for sales forecasting considering both coupons and returns.
 - `README.md`: This file.
 - `requirements.txt`: List of Python packages required for the project.
 
@@ -24,6 +27,30 @@ The Sales Forecasting Project is designed to predict the future sales quantities
    ```bash
    git clone https://github.com/your-username/Sales-Forecast.git
 
+
+## Usage
+Each script is designed to forecast sales based on different parameters. You can run any of these scripts depending on the requirement:
+
+To run the script without additional parameters:
+
+```bash
+python Sales.py
+```
+
+To run the script considering coupons:
+
+```bash
+python Sales_Coupon.py
+```
+
+To run the script considering returns:
+```bash
+python Sales_Return.py
+```
+To run the script considering both coupons and returns:
+```bash
+python model.py
+```
 
 ## Data Description
 
@@ -35,8 +62,8 @@ The dataset (`Dataset.csv`) contains the following columns:
 - **item_sub_category**: Sub-category of the item.
 - **transaction_date**: Date of the transaction.
 - **item_quantity**: Quantity of items sold.
-- **return_quantity**: Quantity of items returned.
-- **item_coupon**: Coupon applied on the item.
+- **return_quantity**: Quantity of items returned (used in `sales_forecasting_with_return.py` and `sales_forecasting_with_coupon_and_return.py`).
+- **item_coupon**: Coupon applied on the item (used in `sales_forecasting_with_coupon.py` and `sales_forecasting_with_coupon_and_return.py`).
 
 ## Model Description
 
@@ -54,6 +81,8 @@ The model's predictions are visualized and compared with the original sales data
 
 Feel free to open issues or submit pull requests if you have any improvements or suggestions.
 
-## License
 
+## License
 This project is licensed under the MIT License.
+
+
